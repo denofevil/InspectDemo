@@ -1,7 +1,6 @@
 class SpellingController < UIViewController
   def loadView
     self.view = UIWebView.alloc.init
-
   end
 
   def viewDidLoad
@@ -10,7 +9,6 @@ class SpellingController < UIViewController
     request = NSURLRequest.requestWithURL(NSURL.URLWithString(url))
     view.delegate = self
     view.loadRequest request
-
   end
 
   # @param [NSURLRequest] request
