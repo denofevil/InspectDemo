@@ -11,6 +11,10 @@ class SpellingController < UIViewController
     view.loadRequest request
   end
 
+  def prefersStatusBarHidden
+    true
+  end
+
   # @param [NSURLRequest] request
   # @param [UIWebView] webView
   def webView(webView, shouldStartLoadWithRequest: request, navigationType: navigationType)
