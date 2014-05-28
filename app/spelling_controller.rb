@@ -15,8 +15,6 @@ class SpellingController < UIViewController
     true
   end
 
-  # @param [NSURLRequest] request
-  # @param [UIWebView] webView
   def webView(webView, shouldStartLoadWithRequest: request, navigationType: navigationType)
     scheme = request.URL.scheme
     return true unless scheme == "spellchecker"
